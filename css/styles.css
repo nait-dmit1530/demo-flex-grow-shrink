@@ -41,3 +41,36 @@ section:only-child {
     background-color: whitesmoke;
     color: darkslategray;
 }
+
+
+section {
+    flex-grow: 1;
+    /*  flex-grow: 0 = means don't grow  *** default ***
+        flex-grow: 1 = all grow proportionally to fill width
+        flex-grow: 2 = all grow with the target flexbox stretching 2x (double)
+        flex-grow: 3 = all grow with the target flexbox stretching 3x (triple)
+     */
+
+    flex-shrink: 1;
+    /*  flex-shrink: 0 = means don't shrink
+        flex-shrink: 1 = all shrink proportionally to width  *** default ***
+    */
+
+    /* width: calc(200px/3);
+    /* A width value is ignored if flex-grow or flex-shrink is assigned 
+        better to use flex-basis */
+    /* flex-basis: 200px;
+    /* flex-basis sets the preferred width */
+
+    flex: 0 1 250px;
+    /* flex is the short-hand for flex-grow, flex-shrink, and flex-basis properties */
+
+}
+
+/*
+section:nth-child(2) {
+    flex-grow: 4;
+    /* flex-grow: 3 = all grow with the target flexbox stretching 2x (quadruple) */
+}
+
+*/
